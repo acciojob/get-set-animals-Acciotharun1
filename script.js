@@ -4,7 +4,7 @@ class Animal {
         this.species=species;
     }
     get makeSound(){
-        console.log(`The ${this.species} makes a sound`);
+        return`The ${this.species} makes a sound`;
     }
 }
 
@@ -22,11 +22,11 @@ class Cat extends Animal {
 }
 
 const myCat = new Cat("German Shepard");
-myCat.makeSound;
+console.log(myCat.makeSound);
 myCat.purr();
 
 const myDog = new Dog("Golden Retriever");
-myDog.makeSound;
+console.log(myDog.makeSound);
 myDog.bark();
 
 // Do not change the code below this line
